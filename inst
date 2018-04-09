@@ -96,7 +96,7 @@ sshd_config
 	chmod +x /bin/sshlimiter
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget https://raw.githubusercontent.com/twossh/TwoSSH-FULL/master/scripts/ajuda.sh -O /bin/ajuda
+	wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/ajuda -O /bin/ajuda
 	chmod +x /bin/ajuda
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
