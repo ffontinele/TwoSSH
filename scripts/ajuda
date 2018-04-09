@@ -14,7 +14,7 @@ tput setaf 2 ; tput bold ; printf '%s' "socks " ; tput setaf 7 ; printf '%s' "- 
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "remover " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Remover um usuário SSH" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "userbackup" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Cria uma cópia de todos os usuários e senhas" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "userbackup " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Cria uma cópia de todos os usuários e senhas" ; echo ""
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "expcleaner " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Remover usuários SSH expirados" ; echo ""
 tput sgr0
@@ -22,17 +22,17 @@ tput setaf 2 ; tput bold ; printf '%s' "sshlimiter " ; tput setaf 7 ; printf '%s
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "sshmonitor " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Verifica o número de conexão simutânea de cada usuário" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "badvpnsetup" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Instala automaticamente o programa BadVPN" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "badvpnsetup " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Instala automaticamente o programa BadVPN" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "banner" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Criar um banner em seu vps" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "banner " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Criar um banner em seu vps" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "tcptweaker" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Altera algumas configurações de rede no sistema para reduzir a latência e melhorar a velocidade" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "tcptweaker " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Altera algumas configurações de rede no sistema para reduzir a latência e melhorar a velocidade" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "speedtest" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Teste de conexão interna do servidor" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "speedtest " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Teste de conexão interna do servidor" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "otimizar" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Atualizar pacotes, limpar memória RAM e cache" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "otimizar " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Atualizar pacotes, limpar memória RAM e cache" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "firewall" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Ant Torrent e DDoS" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "firewall " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Ant Torrent e DDoS" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "detalhes" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Informações do servidor (Uptime, RAM etc)" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "detalhes " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Informações do servidor (Uptime, RAM etc)" ; echo ""
 tput sgr0
