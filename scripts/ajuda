@@ -21,7 +21,7 @@ tput setaf 2 ; tput bold ; printf '%s' "sshlimiter " ; tput setaf 7 ; printf '%s
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "sshmonitor " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Verifica o número de conexão simutânea de cada usuário" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "badvpnsetup" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Compila e instala automaticamente o programa BadVPN" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "badvpnsetup" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Instala automaticamente o programa BadVPN" ; echo ""
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "banner" ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Criar um banner em seu vps" ; echo ""
 tput sgr0
