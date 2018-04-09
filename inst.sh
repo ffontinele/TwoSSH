@@ -120,6 +120,7 @@ sshd_config
 	else
 		/etc/init.d/ssh reload > /dev/null
 	fi
+clear
 echo ""
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Proxy Socks Instalado! Para rodar digite \033[1;31msocks\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando nas portas 22 e 144" ; tput sgr0
