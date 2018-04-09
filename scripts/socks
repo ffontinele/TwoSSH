@@ -50,8 +50,6 @@ read -p "[s/n]: " -e -i s port80
 
 service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
-service ssh restart > /dev/null 2> /dev/null
-service sshd restart > /dev/null 2> /dev/null
 
 if [[ "$port443" = 's' ]]; then
 chmod a+x proxy443.py && nohup python proxy443.py > proxy443.txt &
