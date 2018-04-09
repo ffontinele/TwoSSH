@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "TwoSSH Manager" ; tput sgr0
 tput setaf 3 ; tput bold ; echo "" ; echo "Este script irá:" ; echo ""
 echo "● Instalar e configurar o proxy socks nas portas 80 e 443" ; echo "  para permitir conexões SSH para este servidor"
