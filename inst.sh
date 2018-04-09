@@ -126,7 +126,7 @@ echo ""
 tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado! Para rodar digite \033[1;31msocks\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando nas portas 22 e 144" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Scripts para gerenciamento de usuário instalados" ; tput sgr0
-tput setaf 7 ; tput setab 4 ; tput bold ; echo "Para ver os comandos disponíveis use o comando: \033[1;31majuda\033[0m" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Para ver os comandos disponíveis use o comando: \033[1;31majuda\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Mod by TwoSSH" ; tput sgr0
 rm /root/inst.sh
 echo ""
