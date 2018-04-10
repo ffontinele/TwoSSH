@@ -69,11 +69,14 @@ TCPKeepAlive yes
 #UseLogin no 
 AcceptEnv LANG LC_* 
 Subsystem sftp /usr/lib/openssh/sftp-server 
-UsePAM yes" > /etc/ssh/sshd_config
+UsePAM yes
+Banner /etc/bannerssh" > /etc/ssh/sshd_config
 }
-
 sshd_config
-	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.sh -O /bin/banner
+banner_config(){ echo "© TwoSSH | 2018 All rights reserved" > /etc/bannerssh
+}
+banner_config
+wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.sh -O /bin/banner
 	chmod +x /bin/banner
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/firewall.sh -O /bin/firewall
 	chmod +x /bin/firewall
