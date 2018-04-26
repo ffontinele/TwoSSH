@@ -98,8 +98,7 @@ wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.s
 	fi
 clear
 echo ""
-tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado!" ; tput sgr0
-tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando na porta 22" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado, OpenSSH rodando na porta 22" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Scripts para gerenciamento de usuário instalados" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Para ver os comandos disponíveis use o comando: \033[1;31majuda\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Mod by TwoSSH" ; tput sgr0
