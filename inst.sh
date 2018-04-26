@@ -60,7 +60,7 @@ wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.s
 	chmod +x /bin/criarusuario
 	wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/socks -O /bin/socks
 	chmod +x /bin/socks
-	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/openvpn.sh -O /bin/openvpnsetup
+	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/openbr.sh -O /bin/openvpnsetup
 	chmod +x /bin/openvpnsetup
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
