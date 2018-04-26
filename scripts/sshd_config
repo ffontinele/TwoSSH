@@ -1,6 +1,7 @@
 # © TwoSSH | 2018 All rights reserved
 #
 Port 22
+Port 144
 Protocol 2 
 KeyRegenerationInterval 3600 
 ServerKeyBits 1024 
