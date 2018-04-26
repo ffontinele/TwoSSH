@@ -41,38 +41,8 @@ apt-get install bc screen nano unzip iptables dos2unix wget git htop python -y
 if [ -f "/usr/sbin/ufw" ] ; then
 	ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
 fi
-sshd_config(){ echo "# © TwoSSH | 2018 All rights reserved
-#
-Port 22
-Port 144
-Protocol 2 
-KeyRegenerationInterval 3600 
-ServerKeyBits 1024 
-SyslogFacility AUTH 
-LogLevel INFO 
-LoginGraceTime 120 
-PermitRootLogin yes 
-StrictModes yes 
-RSAAuthentication yes 
-PubkeyAuthentication yes 
-IgnoreRhosts yes 
-RhostsRSAAuthentication no 
-HostbasedAuthentication no 
-PermitEmptyPasswords no 
-ChallengeResponseAuthentication no 
-PasswordAuthentication yes 
-X11Forwarding yes 
-X11DisplayOffset 10 
-PrintMotd no 
-PrintLastLog yes 
-TCPKeepAlive yes 
-#UseLogin no 
-AcceptEnv LANG LC_* 
-Subsystem sftp /usr/lib/openssh/sftp-server 
-UsePAM yes
-Banner /etc/bannerssh" > /etc/ssh/sshd_config
-}
-sshd_config
+wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/twossh/TwoSSH-FULL/master/scripts/sshd_config
+service ssh restart
 banner_config(){ echo "© TwoSSH | 2018 All rights reserved" > /etc/bannerssh
 }
 banner_config
