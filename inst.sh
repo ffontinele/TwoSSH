@@ -2,8 +2,8 @@
 clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "TwoSSH Manager" ; tput sgr0
 tput setaf 3 ; tput bold ; echo "" ; echo "Este script irá:" ; echo ""
-tput setaf 3 ; tput bold ; echo "" ; echo "● Instalar e configurar o proxy socks na porta 80 para permitir conexões SSH para este servidor" ; 
-tput setaf 3 ; tput bold ; echo "" ; echo "● Configurar o OpenSSH para rodar na porta 22 deixando a porta 443 para o OpenVPN" ; 
+tput setaf 3 ; tput bold ; echo "" ; echo "● Instalar e configurar o proxy socks nas portas 80  e 443 para conexões SSH" ; 
+tput setaf 3 ; tput bold ; echo "" ; echo "● Configurar o OpenSSH para rodar na porta 22" ; 
 tput setaf 3 ; tput bold ; echo "" ; echo "● Instalar um conjunto de scripts com comandos do sistema para o gerenciamento de usuários" ; tput sgr0
 echo ""
 tput setaf 3 ; tput bold ; read -n 1 -s -p "Aperte qualquer tecla para continuar..." ; echo "" ; echo "" ; tput sgr0
@@ -60,8 +60,6 @@ wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.s
 	chmod +x /bin/criarusuario
 	wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/socks -O /bin/socks
 	chmod +x /bin/socks
-	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/openbr.sh -O /bin/openvpnsetup
-	chmod +x /bin/openvpnsetup
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/mudardata.sh -O /bin/mudardata
