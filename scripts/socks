@@ -38,7 +38,7 @@ service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
 
 if [[ "$port80" = 's' ]]; then
-chmod a+x /bin/proxy80.py && nohup python /bin/proxy80.py > /bin/proxy80.txt &
+chmod a+x /bin/proxy80.py && screen -dmS screen python /bin/proxy80.py > /bin/proxy80.txt &
 fi
 
 echo ""
