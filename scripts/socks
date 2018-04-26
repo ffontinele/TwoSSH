@@ -12,7 +12,7 @@ echo -e "\033[1;31mVerificando... \033[0m"
 
 sleep 2
 
-abobora=/root/
+abobora=/bin/
 rosa=proxy80.py
 
 if [ -e "$abobora$rosa" ] ; then
@@ -20,7 +20,7 @@ echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
-wget https://raw.githubusercontent.com/twossh/proxy/master/proxy80.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/proxy80.py -O /bin/proxy80.py> /dev/null 2> /dev/null
 history -c
 fi
 
@@ -38,7 +38,7 @@ service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
 
 if [[ "$port80" = 's' ]]; then
-chmod a+x proxy80.py && nohup python proxy80.py > proxy80.txt &
+chmod a+x /bin/proxy80.py && nohup python /bin/proxy80.py > /bin/proxy80.txt &
 fi
 
 echo ""
