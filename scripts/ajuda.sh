@@ -10,7 +10,9 @@ tput setaf 2 ; tput bold ; printf '%s' "alterarsenha " ; tput setaf 7 ; printf '
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "mudardata " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Mudar a data de expiração de um usuário" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "socks " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Ativa o proxy Socks5 nas portas 80 e 443" ; echo ""
+tput setaf 2 ; tput bold ; printf '%s' "socks " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Ativa o proxy Socks5 na porta 80" ; echo ""
+tput sgr0
+tput setaf 2 ; tput bold ; printf '%s' "openvpn " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Instala o sistema OpenVPN para operadora VIVO" ; echo ""
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "remover " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Remover um usuário SSH" ; echo ""
 tput sgr0
