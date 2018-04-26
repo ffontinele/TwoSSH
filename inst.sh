@@ -72,7 +72,7 @@ wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.s
 	chmod +x /bin/sshlimiter
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/ajuda -O /bin/ajuda
+	wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
@@ -98,8 +98,8 @@ wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.s
 	fi
 clear
 echo ""
-tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado! Para rodar digite \033[1;31msocks\033[0m" ; tput sgr0
-tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando nas portas 22 e 144" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado!" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando na porta 22" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Scripts para gerenciamento de usuário instalados" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Para ver os comandos disponíveis use o comando: \033[1;31majuda\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Mod by TwoSSH" ; tput sgr0
