@@ -1,2 +1,2 @@
 # TwoSSH
-Script vpsmanager com socks 80/443
+Script vpsmanager com socks 80
