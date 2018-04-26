@@ -13,18 +13,7 @@ echo -e "\033[1;31mVerificando... \033[0m"
 sleep 2
 
 abobora=/root/
-verde=proxy443.py
 rosa=proxy80.py
-
-if [ -e "$abobora$verde" ] ; then
-echo -e "\033[1;32mPort 443 OK √ \033[0m"
-history -c
-else
-echo -e "\033[1;31mBaixando arquivos para porta 443...\033[0m"
-wget https://raw.githubusercontent.com/twossh/proxy/master/proxy443.py > /dev/null 2> /dev/null
-history -c
-fi
-
 
 if [ -e "$abobora$rosa" ] ; then
 echo -e "\033[1;32mPort 80 OK √ \033[0m"
@@ -42,18 +31,11 @@ echo ""
 echo -e "\033[1;31mRESPONDA ALGUMAS PERGUNTAS \033[0m"
 echo ""
 
-echo -e "\033[1;32mAbrir porta 443? \033[0m"
-read -p "[s/n]: " -e -i s port443
-
 echo -e "\033[1;32mAbrir porta 80? \033[0m"
 read -p "[s/n]: " -e -i s port80
 
 service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
-
-if [[ "$port443" = 's' ]]; then
-chmod a+x proxy443.py && nohup python proxy443.py > proxy443.txt &
-fi
 
 if [[ "$port80" = 's' ]]; then
 chmod a+x proxy80.py && nohup python proxy80.py > proxy80.txt &
