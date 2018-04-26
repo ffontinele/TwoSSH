@@ -14,13 +14,23 @@ sleep 2
 
 abobora=/bin/
 rosa=proxy80.py
+verde=proxy443.py
 
 if [ -e "$abobora$rosa" ] ; then
 echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
-wget https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/proxy80.py -O /bin/proxy80.py> /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/twossh/proxy/master/proxy80.py -O /bin/proxy80.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$verde" ] ; then
+echo -e "\033[1;32mPort 443 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 443...\033[0m"
+wget https://raw.githubusercontent.com/twossh/proxy/master/proxy443.py -O /bin/proxy443.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -34,11 +44,18 @@ echo ""
 echo -e "\033[1;32mAbrir porta 80? \033[0m"
 read -p "[s/n]: " -e -i s port80
 
+echo -e "\033[1;32mAbrir porta 443? \033[0m"
+read -p "[s/n]: " -e -i s port443
+
 service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
 
 if [[ "$port80" = 's' ]]; then
-chmod a+x /bin/proxy80.py && screen -dmS screen python /bin/proxy80.py > /bin/proxy80.txt &
+chmod a+x /bin/proxy80.py && nohup python /bin/proxy80.py > /bin/proxy80.txt &
+fi
+
+if [[ "$port443" = 's' ]]; then
+chmod a+x /bin/proxy443.py && nohup python /bin/proxy443.py > /bin/proxy443.txt &
 fi
 
 echo ""
