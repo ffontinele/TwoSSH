@@ -47,9 +47,6 @@ read -p "[s/n]: " -e -i s port80
 echo -e "\033[1;32mAbrir porta 443? \033[0m"
 read -p "[s/n]: " -e -i s port443
 
-service squid3 stop > /dev/null 2> /dev/null
-service squid stop > /dev/null 2> /dev/null
-
 if [[ "$port80" = 's' ]]; then
 chmod a+x /bin/proxy80.py && nohup python /bin/proxy80.py > /bin/proxy80.txt &
 fi
