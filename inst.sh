@@ -41,8 +41,6 @@ apt-get install bc screen nano unzip iptables dos2unix wget git htop python -y
 if [ -f "/usr/sbin/ufw" ] ; then
 	ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
 fi
-wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/sshd_config
-service ssh restart
 banner_config(){ echo "© TwoSSH | 2018 All rights reserved" > /etc/bannerssh
 }
 banner_config
