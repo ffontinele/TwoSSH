@@ -38,12 +38,17 @@ apt-get upgrade -y
 rm /bin/criarusuario /bin/expcleaner /bin/sshlimiter /bin/addhost /bin/listar /bin/sshmonitor /bin/ajuda > /dev/null
 rm /root/ExpCleaner.sh /root/CriarUsuario.sh /root/sshlimiter.sh > /dev/null
 apt-get install bc screen nano unzip iptables dos2unix wget git htop python -y
-if [ -f "/usr/sbin/ufw" ] ; then
-	ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
-fi
+killall apache2
+apt-get purge apache2 -y
+wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/twossh/TwoSSH/master/scripts/sshd_config
+service ssh restart
 banner_config(){ echo "© TwoSSH | 2018 All rights reserved" > /etc/bannerssh
 }
 banner_config
+if [ -f "/usr/sbin/ufw" ] ; then
+	ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
+fi
+
 wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/banner.sh -O /bin/banner
 	chmod +x /bin/banner
 	wget https://raw.githubusercontent.com/twossh/vpsmanager/master/scripts/firewall.sh -O /bin/firewall
